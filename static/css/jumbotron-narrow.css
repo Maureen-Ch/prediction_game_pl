@@ -1,7 +1,22 @@
 /* Space out content a bit */
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+  background-image:url("../img/Premier_League_1.jpeg");
+  background-size: cover;
 }
 
 a, a:hover, a:visited, a:link, a:active{
@@ -27,7 +42,49 @@ a, a:hover, a:visited, a:link, a:active{
   margin-bottom: 0;
   line-height: 40px;
 }
-
+.text-muted {
+  color: #6c757d!important;
+  font-size: 25px;
+  text-align: center;
+}
+.container form{
+  padding: 30px 0 0 0;
+}
+.container form .form-row{
+  display: flex;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.btn{
+  cursor: pointer; 
+  border: 1px solid #3498db; 
+  background-color: transparent; 
+  color: #3498db; 
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4)
+}
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -39,6 +96,10 @@ a, a:hover, a:visited, a:link, a:active{
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
+    background: #fff;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   }
 }
 .container-narrow > hr {
@@ -49,6 +110,7 @@ a, a:hover, a:visited, a:link, a:active{
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  /* background-color: #FFF; */
 }
 .jumbotron .btn {
   padding: 14px 24px;
